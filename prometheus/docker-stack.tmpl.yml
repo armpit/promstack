@@ -307,6 +307,16 @@ configs:
       io.prometheus.rule: "true"
 
   # Prometheus's scrape config files
+  prometheus-dockerswarm-exportarr:
+    name: prometheus-dockerswarm-exportarr-v1
+    file: ./prometheus/scrape-configs/dockerswarm-exportarr.yaml
+    labels:
+      io.prometheus.scrape_config: "true"
+  prometheus-dockerswarm-pihole-exporter:
+    name: prometheus-dockerswarm-pihole-exporter-v1
+    file: ./prometheus/scrape-configs/dockerswarm-pihole-exporter.yaml
+    labels:
+      io.prometheus.scrape_config: "true"
   prometheus-dockerswarm-nodes:
     name: prometheus-dockerswarm-nodes-v1
     file: ./prometheus/scrape-configs/dockerswarm-nodes.yaml

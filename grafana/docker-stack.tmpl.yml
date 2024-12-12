@@ -369,9 +369,24 @@ configs:
     file: ./grafana/dashboards/promstack-cadvisor.json
     labels:
       io.grafana.dashboard: "true"
+
+  # Exportarr
+  gf-dashboard-promstack-exportarr:
+    name: gf-dashboard-promstack-exportarr-v1
+    file: ./grafana/dashboards/promstack-exportarr.json
+    labels:
+      io.grafana.dashboard: "true"
+
   # Node Exporter
   gf-dashboard-promstack-node-exporter:
     name: gf-dashboard-promstack-node-exporter-v1
     file: ./grafana/dashboards/promstack-node-exporter.json
+    labels:
+      io.grafana.dashboard: "true"
+
+  # Pi-Hole Exporter
+  gf-dashboard-promstack-pihole-exporter:
+    name: gf-dashboard-promstack-pihole-exporter-v1
+    file: ./grafana/dashboards/promstack-pihole-exporter.json
     labels:
       io.grafana.dashboard: "true"
