@@ -390,3 +390,10 @@ configs:
     file: ./grafana/dashboards/promstack-pihole-exporter.json
     labels:
       io.grafana.dashboard: "true"
+
+  # Traefik
+  gf-dashboard-promstack-traefik:
+    name: gf-dashboard-promstack-traefik-v1
+    file: ./grafana/dashboards/promstack-traefik.json
+    labels:
+      io.grafana.dashboard: "true"
