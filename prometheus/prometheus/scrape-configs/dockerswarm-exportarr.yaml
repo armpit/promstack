@@ -19,3 +19,11 @@ scrape_configs:
     static_configs:
       - targets: ["sabnzbd-exporter:9711"]
 
+  - job_name: "bazarr-exporter"
+    static_configs:
+      - targets: ["bazarr-exporter:9712"]
+
+  - job_name: "readarr-exporter"
+    static_configs:
+      - targets: ["readarr-exporter:9713"]
+
