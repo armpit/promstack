@@ -4,11 +4,11 @@
 #
 # The relabeling allows the actual service scrape endpoint to be configured
 # for all or only some services.
-# 
+#
 # Annotations:
 # io.prometheus.probe_enabled=<true|false>
 # io.prometheus.probe_disabled=<true|false>
-# 
+#
 # io.prometheus.dockerswarm-services.should_be_probed=<true|false>
 scrape_configs:
 
@@ -87,7 +87,7 @@ scrape_configs:
       # ================================================================================
       - action: labelmap
         regex: __meta_(dockerswarm_.+)
-      
+
       # ================================================================================
       # Kubernetes compatible relabeling
       # - namespace

@@ -200,7 +200,7 @@ services:
         failure_action: rollback
         monitor: 15s
         max_failure_ratio: 0.2
-    
+
   prometheus-rule-provider:
     <<: *prometheus-config-provider-service
     command:
@@ -315,6 +315,11 @@ configs:
   prometheus-dockerswarm-pihole-exporter:
     name: prometheus-dockerswarm-pihole-exporter-v1
     file: ./prometheus/scrape-configs/dockerswarm-pihole-exporter.yaml
+    labels:
+      io.prometheus.scrape_config: "true"
+  prometheus-dockerswarm-traefik:
+    name: prometheus-dockerswarm-traefik-v1
+    file: ./prometheus/scrape-configs/dockerswarm-traefik.yaml
     labels:
       io.prometheus.scrape_config: "true"
   prometheus-dockerswarm-nodes:
